@@ -1,0 +1,35 @@
+h1 {
+    color: #50589C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: "\&#x1F3B9;"
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #50589c;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    text-align: center;
+    color: #636ccb;
+}
+
+.footer {
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: left;
+    color: black;
+}
+
+a:hover {
+    color: #6e8cfb;
+    font-size: large;
+}
+
+ul,li::before {
+    list-style-type: "\1F3B9";
+}
