@@ -1,7 +1,16 @@
 h1 {
     color: #50589C;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    content: "\&#x1F3B9;"
+    content: "\&#x1F3B9;";
+    opacity: 0;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    opacity: 0;
 }
 
 h2 {
@@ -32,4 +41,79 @@ a:hover {
 
 ul,li::before {
     list-style-type: "\1F3B9";
+}
+
+.fade-text {
+    animation: fadeTxt linear 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.move-img {
+    animation: moveImg linear 1s 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeTxt {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        font-size: 2.5rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3rem;
+    }
+}
+
+@keyframes moveImg {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+nav {
+    float: right;
+    position: sticky;
+    top: 0;
+    background-color: darkolivegreen;
+    width: 240px
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav a {
+    color: lightgrey;
+}
+
+footer {
+    line-height: 80%;
+    font-weight: 500;
+    position: relative;
+}
+
+small {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    padding-bottom: 30px;
 }
