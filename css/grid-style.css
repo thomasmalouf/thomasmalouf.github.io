@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*,
+* ::before
+* ::after {
+    box-sizing: inherit;
+}
+
+.parent {
+    width: 1100px;
+    height: 680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns each using 1 fraction of overall width */
+    grid-template-rows: repeat(4, 1fr); /*4 rows each using 1 fraction of overwall width */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/* grid-area: row start / column start / row end / column end */
+
+.div1 { 
+    grid-area: 1 / 1 / 3 / 4; 
+}
+
+.div2 {
+    grid-area: 1 / 4 / 3 / 6; 
+    background-color:darkviolet
+}
+
+.div3 {
+    grid-area: 1 / 6 / 2 / 8; 
+    background-color: blueviolet;
+}
+
+.div4 {
+    grid-area: 2 / 6 / 3 / 8; 
+    background-color: darkgoldenrod;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 5 / 4; 
+    background-color: deeppink;
+}
+
+.div6 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: khaki;
+}
+
+.div7 {
+    grid-area: 3 / 5 / 4 / 6;
+    background-color: lightcoral;
+}
+
+.div8 {
+    grid-area: 4 / 4 / 5 / 6;
+    background-color: midnightblue;
+}
+
+.div9 {
+    grid-area: 3 / 6 / 5 / 8;
+    background-color: honeydew;
+}
