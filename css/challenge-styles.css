@@ -1,22 +1,31 @@
+:root {
+    --font-size: 1vw;
+    --color-red: #bd114c;
+    --color-yellow: #ffb03a;
+    --color-green: #e8ffc7;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
+    font-size: calc(var(--font-size) + 14px);
 }
 
 h1, h2, h3 {
-    color: #bb1b47;
+    color: var(--color-red);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    text-transform: capitalize;
-    font-weight: normal;
-    letter-spacing: .1rem;
-    font-size: 3.5rem;
+    font-size: calc(var(--font-size) * 6);
+    background-image: linear-gradient(60deg, var(--color-red), var(--color-yellow));
+    background-clip: text;
+    color: transparent;
+    padding: 50px;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: calc(var(--font-size) + 32px);
 }
 
 h3 {
@@ -46,4 +55,40 @@ nav a:active {
 
 nav a:focus {
     color: green;
+}
+
+nav {
+    background-image: radial-gradient(var(--color-green), var(--color-yellow));
+}
+
+nav ul {
+    padding-left: 0;
+    width: calc(60% + 30px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(80% - 40px);
+    margin: 0 auto;
+}
+
+main {
+    width: calc(60% - 40px);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 95%;
+}
+
+footer {
+    font-size: 18px;
+    line-height: 1.1;
 }
